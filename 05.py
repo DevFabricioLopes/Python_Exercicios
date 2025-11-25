@@ -1,0 +1,23 @@
+# Parte 1 — Análise Numérica
+num = int(input('Digite um número: '))
+print(f'O tipo primitivo é: {type(num)}')
+print(f'Dobro: {num * 2}')
+print(f'Triplo: {num * 3}')
+print(f'Raiz quadrada: {num ** 0.5}')
+print(f'É par? {num % 2 == 0}')
+print(f'É ímpar? {num % 2 != 0}')
+print(f'É positivo? {num > 0}')
+print(f'É negativo? {num < 0}')
+print(f'Antecessor: {num - 1}')
+print(f'Sucessor: {num + 1}')
+
+#Parte 2 — Análise de Texto
+texto = input('Digite algo: ')
+print(f'O tipo primitivo é: {type(texto)}')
+print(f'É numérico? {texto.isnumeric()}')
+print(f'É alfabético? {texto.isalpha()}')
+print(f'É alfanumérico? {texto.isalnum()}')
+print(f'Tudo maiúsculo? {texto.isupper()}')
+print(f'Tudo minúsculo? {texto.islower()}')
+print(f'Está capitalizada? {texto.istitle()}')
+print(f'Total de caracteres: {len(texto)}')
