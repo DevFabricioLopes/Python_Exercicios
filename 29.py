@@ -7,3 +7,4 @@ raiz= math.sqrt(hipotenusa)
 print(f' a hipotenusa vai medir: : {raiz:.2f}')
 
 
+
