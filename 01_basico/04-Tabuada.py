@@ -1,5 +1,7 @@
+# Solicita ao usuário um número inteiro
 n = int(input('Digite um número: '))
 
+# Exibe a tabuada do número de 1 até 10
 print(f'{n} x 1 = {n * 1}')
 print(f'{n} x 2 = {n * 2}')
 print(f'{n} x 3 = {n * 3}')
@@ -10,7 +12,3 @@ print(f'{n} x 7 = {n * 7}')
 print(f'{n} x 8 = {n * 8}')
 print(f'{n} x 9 = {n * 9}')
 print(f'{n} x 10 = {n * 10}')
-
-
-
-
