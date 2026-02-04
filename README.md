@@ -24,13 +24,14 @@ sempre com ênfase em lógica de programação e boas práticas.
 
 Os exercícios estão organizados por pastas, de acordo com o conceito principal utilizado:
 
+```
 01_basico/
 02_condicionais/
 03_lacos/
 04_funcoes/
 05_estruturas_dados/
 06_exercicios_mistos/
-
+```
 
 📌 Observação: alguns exercícios combinam mais de um conceito e, por isso,
 estão agrupados na pasta de exercícios mistos.
@@ -46,4 +47,4 @@ servindo como base para projetos maiores e aplicações reais.
 
 ## 🚀 Tecnologias
 
-- Python 3 
+- Python 3.x
