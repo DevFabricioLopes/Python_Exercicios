@@ -16,3 +16,10 @@ primeiro_nome = frase.split()[0]
 
 print(f'O primeiro nome é: {primeiro_nome}')
 print(f'O primeiro nome tem {len(primeiro_nome)} letras')
+
+
+
+
+
+      
+        
