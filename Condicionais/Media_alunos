@@ -1,0 +1,16 @@
+# Calcula a média de um aluno e informa sua situação
+
+n1 = int(input('Digite a nota 1: '))
+n2 = int(input('Digite a nota 2: '))
+n3 = int(input('Digite a nota 3: '))
+
+media = (n1 + n2 + n3) / 3
+
+print(f'Média final: {media}')
+
+if media >= 7:
+    print('Aluno aprovado')
+elif media >= 5:
+    print('Aluno em recuperação')
+else:
+    print('Aluno reprovado')
