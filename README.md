@@ -25,12 +25,12 @@ sempre com ênfase em lógica de programação e boas práticas.
 Os exercícios estão organizados por pastas, de acordo com o conceito principal utilizado:
 
 ```
-01_basico/
-02_condicionais/
-03_lacos/
-04_funcoes/
-05_estruturas_dados/
-06_exercicios_mistos/
+basico/
+condicionais/
+lacos/
+funcoes/
+estruturas_dados/
+exercicios_mistos/
 ```
 
 📌 Observação: alguns exercícios combinam mais de um conceito e, por isso,
