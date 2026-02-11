@@ -1,21 +1,29 @@
-# pede para o usuário digitar o tamanho da primeira reta
-r1 = int(input('Digite o tamanho da reta 1: '))
+# Lê o primeiro lado do triângulo
+a = int(input('Lado 1: '))
 
-# pede para o usuário digitar o tamanho da segunda reta
-r2 = int(input('Digite o tamanho da reta 2: '))
+# Lê o segundo lado do triângulo
+b = int(input('Lado 2: '))
 
-# pede para o usuário digitar o tamanho da terceira reta
-r3 = int(input('Digite o tamanho da reta 3: '))
+# Lê o terceiro lado do triângulo
+c = int(input('Lado 3: '))
 
-# aqui o programa verifica a regra do triângulo:
-# cada reta precisa ser MENOR que a soma das outras duas
-# se TODAS essas condições forem verdadeiras, forma triângulo
-if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
-    
-    # se entrou aqui, as três retas conseguem formar um triângulo
+# Verifica se é possível formar um triângulo
+# A soma de dois lados deve ser maior que o terceiro
+if a + b > c and a + c > b and b + c > a:
     print('Forma um triângulo')
 
+    # Se todos os lados forem iguais
+    if a == b == c:
+        print('Equilátero')
+
+    # Se pelo menos dois lados forem iguais
+    elif a == b or a == c or b == c:
+        print('Isósceles')
+
+    # Se todos os lados forem diferentes
+    else:
+        print('Escaleno')
+
+# Caso não seja possível formar um triângulo
 else:
-    # se entrou aqui, pelo menos uma das condições foi falsa
-    # então não é possível formar um triângulo
-    print('Não forma triângulo')
+    print('Não forma um triângulo')

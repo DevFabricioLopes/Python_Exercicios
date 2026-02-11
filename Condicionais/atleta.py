@@ -1,31 +1,36 @@
-# Solicita ao usuário o ano de nascimento
-# Converte a entrada (texto) para número inteiro
+# Importa a classe date para trabalhar com datas
+from datetime import date
+
+# Pede ao usuário o ano de nascimento e converte para inteiro
 ano_nascimento = int(input('Qual ano você nasceu? '))
 
-# Calcula a idade da pessoa com base no ano atual (2026)
-idade = 2026 - ano_nascimento
+# Obtém o ano atual automaticamente pelo sistema
+ano_atual = date.today().year
 
-# Verifica se a idade é de até 9 anos
+# Calcula a idade subtraindo o ano de nascimento do ano atual
+idade = ano_atual - ano_nascimento
+
+# Se a idade for menor ou igual a 9 anos
 if idade <= 9:
     # Categoria Mirim
     print('Você é atleta Mirim')
 
-# Verifica se a idade está entre 10 e 14 anos
-elif idade >= 10 and idade <= 14:
+# Se a idade for até 14 anos (e maior que 9)
+elif idade <= 14:
     # Categoria Infantil
     print('Você é atleta Infantil')
 
-# Verifica se a idade está entre 15 e 19 anos
-elif idade >= 15 and idade <= 19:
+# Se a idade for até 19 anos (e maior que 14)
+elif idade <= 19:
     # Categoria Júnior
     print('Você é atleta Júnior')
 
-# Verifica se a idade é exatamente 20 anos
-elif idade == 20:
+# Se a idade for até 25 anos (e maior que 19)
+elif idade <= 25:
     # Categoria Sênior
     print('Você é atleta Sênior')
 
-# Caso a idade seja maior que 20 anos
+# Se a idade for maior que 25 anos
 else:
     # Categoria Master
     print('Você é atleta Master')
