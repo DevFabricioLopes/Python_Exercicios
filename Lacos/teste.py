@@ -1,5 +1,0 @@
-
-for c in range (0,50,2): 
-   print(f'O número par é {c}')
-
-
