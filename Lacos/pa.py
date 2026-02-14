@@ -1,18 +1,22 @@
-# Pede ao usuário o primeiro termo da PA e converte para inteiro
-primeiro = int(input('Digite o primeiro termo: '))
+# Pede ao usuário o primeiro termo da PA
+primeiro_termo = int(input('Digite o primeiro termo: '))
 
-# Pede ao usuário a razão (quanto vai somar a cada passo)
+# Pede ao usuário a razão da PA
 razao = int(input('Digite a razão: '))
 
-# A variável "termo" começa com o valor do primeiro termo
-termo = primeiro
+# Calcula o décimo termo usando a fórmula da PA:
+# an = a1 + (n - 1) * r
+# Aqui n = 10
+decimo = primeiro_termo + (10 - 1) * razao
 
-# Repete 10 vezes (vai mostrar 10 termos da PA)
-for c in range(0, 10):
+# O laço começa no primeiro termo,
+# vai até o décimo termo,
+# pulando de acordo com a razão.
+# Usamos (decimo + razao) porque o range não inclui o último valor.
+for c in range(primeiro_termo, decimo + razao, razao):
+    
+    # Mostra cada termo da PA na mesma linha
+    print(c, end=" -> ")
 
-    # Mostra o valor atual do termo
-    print(termo)
-
-    # Atualiza o termo somando a razão
-    # Isso faz ele crescer a cada repetição
-    termo = termo + razao
+# Indica o final da sequência
+print("FIM")

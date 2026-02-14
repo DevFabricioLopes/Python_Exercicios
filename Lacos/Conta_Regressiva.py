@@ -5,10 +5,10 @@ from time import sleep
 # Loop que faz uma contagem regressiva de 10 até 1
 # range(início, fim, passo)
 # Começa em 10, vai até 1 (0 não incluso), decrementando de 1 em 1
-for numero in range(10, 0, -1):
+for c in range(10, 0, -1):
 
     # Imprime o número atual da contagem
-    print(numero)
+    print(c)
 
     # Pausa o programa por 1 segundo antes de continuar para o próximo número
     sleep(1)
